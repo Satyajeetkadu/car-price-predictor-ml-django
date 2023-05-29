@@ -1,0 +1,107 @@
+/* Custom CSS styles */
+body {
+    background-color: #1e1e1e !important;
+}
+
+
+.card {
+    margin-top: 50px;
+    width: 100%;
+    height: 100%;
+}
+
+.card-header h1 {
+    font-size: 30px;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+h5 {
+    font-size: 18px;
+}
+
+#prediction {
+    font-size: 20px;
+    margin-top: 20px;
+    animation: fade-in 1s;
+    
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Additional Custom CSS */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    text-align: center;
+    font-weight: bold;
+}
+
+.form-group select,
+.form-group input[type="text"] {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.form-group button[type="submit"] {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.form-group.select-label label {
+    display: none;
+}
+
+.form-group.select-label select:focus + label {
+    display: none;
+}
+
+/* Custom positioning for form and image */
+.form-container {
+    display: flex;
+    align-items: center;
+    
+}
+
+.form-container .form-card {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.form-container .car-image {
+    flex: 1;
+    text-align: right;
+}
+
+
+.car-image img {
+    max-width: 50%;
+    height: 246px;
+    margin-left: 794px;
+    margin-top: -756px;
+}
+
+@media (max-width: 768px) {
+    .form-container {
+        flex-direction: column;
+    }
+
+    .form-container .form-card,
+    .form-container .car-image {
+        margin: 0;
+    }
+}
