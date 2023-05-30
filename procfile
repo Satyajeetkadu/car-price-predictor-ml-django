@@ -1,0 +1,1 @@
+web gunicorn predictor_car.wsgi:application --log-file -
